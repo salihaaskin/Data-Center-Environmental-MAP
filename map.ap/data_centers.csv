@@ -1,0 +1,5 @@
+name,latitude,longitude,region,temperature,renewable_energy,company,Address ,County,Postal Code
+600 West 7th Street (LAX10),34.04767238,-118.2572168,U.S,18.5,75,Digital Realty,600 West 7th Street,Los Angeles,90017 Los Angeles
+2260 E El Segundo Blvd (LAX12),33.91586436,-118.3846085,U.S,12.3,65,Digital Realty,2260 East El Segundo Boulevard,Los Angeles,90245 El Segundo
+Hivelocity - Los Angeles 2,34.04760126,-118.2572705,U.S,20.1,40,Hivelocity,600 W. 7th St,Los Angeles,90017 Los Angeles
+Hivelocity - Los Angeles 1,34.04812546,-118.2553683,U.S,20.1,,Hivelocity,624 S Grand Ave,Los Angeles,90017 Los Angeles
