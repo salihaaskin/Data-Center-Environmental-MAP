@@ -9,8 +9,8 @@ import os
 BASE_DIR = os.path.dirname(__file__)
 csv_path = os.path.join(BASE_DIR, "data_centers.csv")
 
-# Load your CSV
-df = pd.read_csv(csv_path)
+# Load your CSV safely with encoding
+df = pd.read_csv(csv_path, encoding="utf-8", errors="replace")  # <-- updated line
 
 # Show first few rows in Streamlit
 st.subheader("📊 Data Preview")
