@@ -5,12 +5,16 @@ from folium.plugins import HeatMap
 from streamlit_folium import st_folium
 import os
 
-# Get the directory of this script (so CSV is found correctly)
+# Get the directory of this script
 BASE_DIR = os.path.dirname(__file__)
 csv_path = os.path.join(BASE_DIR, "data_centers.csv")
 
-# Load your CSV safely with encoding
-df = pd.read_csv(csv_path, encoding="utf-8", errors="replace")  # <-- updated line
+# Load your CSV safely
+try:
+    df = pd.read_csv(csv_path, encoding="utf-8")
+except UnicodeDecodeError:
+    # Fallback if UTF-8 fails
+    df = pd.read_csv(csv_path, encoding="cp1252")
 
 # Show first few rows in Streamlit
 st.subheader("📊 Data Preview")
